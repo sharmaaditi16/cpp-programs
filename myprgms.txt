@@ -1,0 +1,227 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{ 
+	string str; 
+	cout<<"Enter your name"; 
+	cin>>str; 
+	cout<<"Welcome "<<str;
+
+	return0;
+}
+
+
+
+prgm to find area of triangle(#FORMING EXPRESSIONS)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float b,h,a;
+    cout<<"enter base and height";
+    cin>>b>>h;
+    a=(b*h)/2;
+    cout<<"area is "<<a<<endl;
+  
+    return 0;
+}
+
+
+prgm to find roots of a quadratic equation(#FORMING EXPRESSIONS)
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+	float root1,root2; 
+	cout<<"Enter 3 values"; 
+	cin>>a>>b>>c; 
+	root1=(-b+sqrt((b*b)-(4*a*c)))/(2*a);
+ 	root2=(-b-sqrt((b*b)-(4*a*c)))/(2*a); 
+	cout<<root1<<" "<<root2<<endl;
+
+	return0;
+}
+
+
+prgm to find Area of circle(#FORMING EXPRESSIONS)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	float r,area;
+	cout<<"Enter the Radius";
+	cin>>r; 
+	area=3.1425f*r*r;
+	cout<<"Area is "<<area<<endl;
+	return0;
+}
+
+
+prgm to calculate net salary
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+	float basic;
+	float percentAllow;
+	float percentDeduct;
+	float netSalary;
+	cout<<"Enter Basic Salary:";
+	cin>>basic;
+	cout<<"Enter percent of Allowences:";
+	cin>>percentAllow;
+	cout<<"Enter percent of Deductions:";
+	cin>>percentDeduct;   
+ 	netSalary=basic+basic*percentAllow/100-basic*percentDeduct/100;
+	cout<<"Net Salary is:"<<netSalary<<endl;
+}
+
+
+prgm to divide two numbers(#COMPOUND ASSINGNMENT OPERATOR)(CONDITIONAL STATEMENT)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,c;
+   cout<<"Enter two numbers: "<<endl;
+   cin>>a>>b;
+   if(b==0)
+   {
+   cout<<"Invalid denominator"<<endl;
+   }
+   else
+   {
+   c=a/b;
+   cout<<c<<endl;
+   }
+   return 0;
+}
+
+
+prgm to find nature of roots of quadratic equation(CONDITIONAL STATEMENT)(#NESTED IF)
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+
+    float a,b,c,d;
+    cout<<"enter a b c";
+    cin>>a>>b>>c;
+    d=b*b-4*a*c;
+
+    if(d==0)
+    {
+        cout<<"roots are real and equal";
+        cout<<(-b/(2*a))<<endl;
+
+    }
+    else if (d>0)
+    {
+        cout<<"roots are real and unequal";
+        cout<<(-b+sqrt(d)/(2*a))<<endl;
+        cout<<(-b-sqrt(d)/(2*a))<<endl;
+    }
+    else
+    {
+        cout<<"imaginary"<<endl;
+    }
+
+
+   return 0;
+}
+
+
+
+prgm for entering day no. and displaying day(#ELSE IF LADDER)
+#include <iostream>
+usingnamespace std;
+int main()
+{
+
+int day;
+ cout<<"Enter Day no. :"<<endl;
+ cin>>day;
+if(day==1) 
+  cout<<"Mon"<<endl;
+
+elseif(day==2)
+  cout<<"Tue"<<endl;
+
+elseif(day==3) 
+  cout<<"Wed"<<endl;
+
+elseif(day==4) 
+  cout<<"Thur"<<endl;
+
+elseif(day==5)
+  cout<<"Fri"<<endl;
+
+elseif(day==6)  
+  cout<<"Sat"<<endl;
+
+elseif(day==7) 
+  cout<<"Sun"<<endl;
+
+else 
+  cout<<"Invalid Day no. !"<<endl;
+
+return0;
+
+}
+
+
+
+prgm to find a year is leap year or not
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int year;
+    cout<<"enter a year:";
+    cin>>year;
+
+    if(year % 4==0)
+    {
+        if (year%100==0)
+        {
+            if (year %400==0)
+                cout<<year<< "is a leap year";
+            else
+                cout<<year<< "is not a leap year";
+        }
+        else
+            cout<<year<<"is a leap year";
+
+    }
+    else
+        cout<<year<<"is not a leap year";
+   return 0;
+}
+
+
+
+
+
+
+
